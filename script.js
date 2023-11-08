@@ -4,10 +4,10 @@
 })();
 /* function *********************************************************************************/
 function dday() {
-  var targetDate = new Date("2023-07-20");
-  var currentDate = new Date();
-  var timeDiff = currentDate - targetDate;
-  var currentDday = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-  return (document.getElementById("d-day").textContent = `진우🩷진주 ${currentDday+1}일`);
+  var now = new Date();
+  var start = new Date('2023-07-20');
+  var timeDiff = now.getTime() - start.getTime();
+  var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+  return (document.getElementById("d-day").textContent = `진우🩷진주 ${day}일`);
 }
 /* function *********************************************************************************/
