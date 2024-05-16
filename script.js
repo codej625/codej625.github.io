@@ -28,7 +28,7 @@ function createCard(imageUrl, altText) {
 
   const img = document.createElement("img");
   img.src = imageUrl;
-  img.classList.add("card-img-top");
+  img.classList.add("card-img-top", "card-img-bottom");
   img.alt = altText;
 
   cardDiv.appendChild(img);
