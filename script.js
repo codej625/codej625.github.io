@@ -2,6 +2,33 @@
   dday();
 })();
 
+const imageGallery = document.getElementById("image-gallery");
+
+for (let index = 0; index < 18; index++) {
+  const url = `./img/jj_${index + 1}.jpg`;
+  const card = createCard(url);
+  imageGallery.appendChild(card);
+}
+
+function createCard(imageUrl, altText) {
+  const colDiv = document.createElement("div");
+  colDiv.classList.add("col");
+
+  const cardDiv = document.createElement("div");
+  cardDiv.classList.add("card", "mt-3", "div-center");
+  cardDiv.style.width = "18rem";
+
+  const img = document.createElement("img");
+  img.src = imageUrl;
+  img.classList.add("card-img-top");
+  img.alt = altText;
+
+  cardDiv.appendChild(img);
+  colDiv.appendChild(cardDiv);
+
+  return colDiv;
+}
+
 function dday() {
   const now = new Date();
   const start = new Date("2023-07-20");
