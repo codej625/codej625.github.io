@@ -23,7 +23,7 @@ function createCard(imageUrl, altText) {
   colDiv.classList.add("col");
 
   const cardDiv = document.createElement("div");
-  cardDiv.classList.add("card", "mt-3", "div-center");
+  cardDiv.classList.add("card", "mt-3", "mb-3", "div-center");
   cardDiv.style.width = "18rem";
 
   const img = document.createElement("img");
