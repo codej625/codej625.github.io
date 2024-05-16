@@ -13,7 +13,7 @@ for (let index = 1; index <= 18; index++) {
     number = index;
   }
   console.log(number);
-  const url = `./img/jj_${number}.jpg`;
+  const url = `./img/jj_${number}.jpeg`;
   const card = createCard(url);
   imageGallery.appendChild(card);
 }
