@@ -4,7 +4,7 @@
 
 const imageGallery = document.getElementById("image-gallery");
 
-for (let index = 1; index <= 18; index++) {
+for (let index = 1; index <= 19; index++) {
   let number;
   if (index < 10) {
     number = index;
